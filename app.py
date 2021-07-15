@@ -2,7 +2,7 @@ from flask import Flask,render_template,request
 import db
 app = Flask(__name__)
 
-@app.route('/index',methods=["POST","GET"])
+@app.route('/',methods=["POST","GET"])
 def create():
     if request.method=="POST":
          name = request.form.get('name')
